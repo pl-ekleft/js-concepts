@@ -43,7 +43,7 @@ const array = [1, 2, 3, 4, 5]
 
 // this всегда ссылкается на тот элемент, который слева от вызова (пример Array.prototype.multBy, this ссылается на prototype)
 Array.prototype.multBy = function(n) { // родительский класс Array и обращаемся к prototype (n === this)
-  return this.map((i) => { // при стрелочной функции this === n, а при function контекст изменится (станет глобальным объектом window)
+  return this.map((i) => { // при стрелочной функции this === n, а при function контекст изменится (станет глобальным объектом window || global если в nodejs)
     return i * n
   })
 }
