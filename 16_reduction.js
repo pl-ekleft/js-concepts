@@ -128,12 +128,14 @@ const cloned = [...nums]
 // 14
 // console.log(Math.floor(9.7) === 9)
 // console.log(~~9.7 === 9)
+// console.log(Math.floor(-9.7)) // -10 - floor всегда стремится к нулю
+// console.log(~~(-9.7)) // -9 - при отрицательных значениях в отличии от floor
 
 // 15
 // console.log(Math.pow(2, 3))
 // console.log(Math.pow(2, 4))
 // console.log(Math.pow(4, 3))
-//
+// Возведение в степень аналогично pow
 // console.log(2 ** 3)
 // console.log(2 ** 4)
 // console.log(4 ** 3)
